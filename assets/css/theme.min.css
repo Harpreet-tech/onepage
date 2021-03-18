@@ -7729,14 +7729,26 @@ body.search .no-results .search-form input[type=submit] { background-color: var(
 .mob-phon { display: none; position: absolute; left: 0; right: 0; top: 70px; margin: auto; }
 
 /*form css start*/
-.form input[type="text"], .form input[type="email"], .form input[type="phone"], .form textarea {font-size:15px; font-family: 'OpenSansRegular'; text-align:left;
-	background: #330066; width:100%; border:0; color:rgba(255, 255, 255, 0.7); padding:12px 10px 12px 10px; font-weight:100;
+.form input[type="text"], .form input[type="email"], .form input[type="phone"], .form textarea, .form select {font-size:15px; font-family: 'OpenSansRegular'; text-align:left;
+	background: #330066!important; width:100%; border:0!important; color:rgba(255, 255, 255, 0.7); padding:12px 10px 12px 10px; font-weight:100;
     margin-bottom: 10px;
 }
 .form select{background: rgba(0, 0, 0, 0.1) url(../images/form-arrow.png) right 15px center no-repeat; -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: ''; width:100%; border:1px solid #a6abc5; color:rgba(255, 255, 255, 0.7); padding:12px 10px 12px 10px; font-family: 'OpenSansRegular';  font-size:15px; }	
+
+.contactfld { font-size: 15px; font-family: 'OpenSansRegular';
+    text-align: left; color: #fff;
+    background: #330066;
+    width: 100%;
+    border: 0;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 12px 10px 12px 10px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
 .form select option{  margin:10px 0px; border:none; font-size:15px; color:#000; padding:0px 10px; color:#fff; }
 .form textarea {font-size:15px; color:#fff; text-align:left; min-height:115px; }
 .capcha {width:55% !important; float:left;}
@@ -7762,7 +7774,11 @@ body.search .no-results .search-form input[type=submit] { background-color: var(
 
 
 
-@media (min-width: 768px) { .col-sm-1\/5 { width: 20%; } }
+@media (min-width: 768px) { .col-sm-1\/5 { width: 20%; } 
+    .pr-sm-0 { padding-right: 0px!important; }
+
+
+}
 @media (min-width: 992px) { .col-md-1\/5 { width: 20%; } }
 @media (min-width: 1200px) { .col-lg-1\/5 { width: 20%; } }
 @media screen and (min-width: 1200px) { .stretch-to-right { margin-right: -22vw !important; }
