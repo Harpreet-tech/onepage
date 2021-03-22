@@ -552,24 +552,36 @@
                         <div class="clear"></div>
                       </div>
                   </div>
+<style type="text/css">
+      .formrow { font-size: 15px; font-family: 'OpenSansRegular'; text-align: left;
+    background: #330066!important; width: 100%; display: flex; justify-content: space-between;
+    border: 0!important; height: 52px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 12px 10px 12px 10px; }
+      .formrow input { color: #fff; width: 55%; background: transparent!important; border: 0 none;  }
+      .formrow input:focus { border: 0 none; outline: 0;  }
+</style>
+
                   <div class="col-sm-4 col-xs-12 pr-sm-0">
-                      <div class="form">
-                           <input type="text" id="txtEmail" tabindex="1" placeholder="Travel Date"> 
-                       <span id="RequiredFieldValidator2" style="color:Red;display:none;">Required</span>
+                      <div class="form formrow">
+                           <span>Travel Date</span>
+                           <input type="date" id="txtEmail" tabindex="1" placeholder="Travel Date"> 
+                           <span id="RequiredFieldValidator2" style="color:Red;display:none;">Required</span>
                         <div class="clear"></div>
                       </div>
                   </div>
                   <div class="col-sm-4 col-xs-12 pr-sm-0">
-                      <div class="form">
-                           <input type="text" id="txtEmail" tabindex="1" placeholder="Number of Days"> 
-                       <span id="RequiredFieldValidator2" style="color:Red;display:none;">Required</span>
+                      <div class="form formrow">
+                          <span>Number of Days</span>
+                          <input type="number" id="txtEmail" tabindex="1"> 
+                          <span id="RequiredFieldValidator2" style="color:Red;display:none;">Required</span>
                         <div class="clear"></div>
                       </div>
                   </div>
                   <div class="col-sm-4 col-xs-12">
                       <div class="form">
                            <select>
-                               <option>Prefferd Hotel Category</option>
+                               <option>Preferred Hotel Category</option>
                                <option>3*</option>
                                <option>4*</option>
                                <option>5*</option>
@@ -580,21 +592,21 @@
                   <div class="col-sm-6 col-xs-12 pr-sm-0">
                       <div class="form">
                            <input name="firstName" type="text" id="firstName" tabindex="1" placeholder="Location* ">
-                       <span id="RequiredFieldValidator2" style="color:Red;display:none;">Required</span>         
-                     
-                        <div class="clear"></div>
+                           <div class="clear"></div>
                       </div>
                   </div>
                   <div class="col-sm-6 col-xs-12">
-                      <div class="form">
-                           <input name="firstName" type="text" id="firstName" tabindex="1" placeholder="Number of Guests* ">
-                       <span id="RequiredFieldValidator2" style="color:Red;display:none;">Required</span>
+                      <div class="form formrow">
+                           <span>Number of Guests</span>
+                           <input type="number" id="firstName" tabindex="1" placeholder="">
                         <div class="clear"></div>
                       </div>
                   </div>
+                  <div class="col-sm-12"></div>
                   <div class="col-sm-6 col-xs-12 pr-sm-0">
-                      <div class="form">
-                           <input name="firstName" type="text" id="firstName" tabindex="1" placeholder="Number of Rooms* ">
+                      <div class="form formrow">
+                           <span>Number of Rooms</span>
+                           <input type="number" id="firstName" tabindex="1" placeholder="">
                        <span id="RequiredFieldValidator2" style="color:Red;display:none;">Required</span>
                         <div class="clear"></div>
                       </div>
@@ -613,7 +625,6 @@
                               <option>Educational Tour</option>
                               <option>Retreat</option>
                             </select>
-                           <span id="RequiredFieldValidator2" style="color:Red;display:none;">Required</span>
                         <div class="clear"></div>
                       </div>
                   </div>
